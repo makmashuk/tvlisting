@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <title>TV Listing</title>
+</head>
+
+<style>
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    margin: 1em;
+  }
+
+  .bl1{
+    border-left: 12px solid rgb(95 179 179);
+  }
+  .bl2{
+    border-left: 12px solid rgb(121 181 233);
+  }
+  .bl3{
+    border-left: 12px solid rgb(245 215 106);
+  }
+
+  .panelTitle {
+    display: flex;
+    justify-content: space-between;
+    background: #04abf2;
+    color: white;
+    font-size: large;
+    padding: 1em;
+  }
+
+  .list {
+    border: 1px solid #cecfcf;
+    border-radius: 5px;
+    display: flex;
+  }
+
+  .time {
+    background: #f1f1f1;
+    text-align: center;
+    border-right: 1px solid #cecfcf;
+    padding: 0.5em;
+    width: 25%;
+
+  }
+
+  .showName {
+    padding: 0.5em 2em;
+    width: 75%;
+  }
+
+  .showName>.title {
+    font-weight: bold;
+  }
+
+  .showName>.title:hover {
+    color: #7aa0a0;
+    cursor: pointer;
+  }
+
+  .showInfo {
+    padding: 3em;
+    background: #f1f1f1;
+  }
+
+  .blink {
+    -webkit-animation: 1s linear infinite condemned_blink_effect;
+    /* for Safari 4.0 - 8.0 */
+    animation: 2s linear infinite condemned_blink_effect;
+  }
+
+  /* for Safari 4.0 - 8.0 */
+  @-webkit-keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+
+    50% {
+      visibility: hidden;
+    }
+
+    100% {
+      visibility: visible;
+    }
+  }
+
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+
+    50% {
+      visibility: hidden;
+    }
+
+    100% {
+      visibility: visible;
+    }
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="panelTitle">
+        <p>Tuesday</p>
+        <p>September 01, 2020</p>
+      </div>
+      <div class="card-body">
+        
+        <div class="accordion" id="a01">
+
+          <div class="list">
+
+            <div class="time bl1">
+              7:00 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col01">
+              <p class="title">Puppy Dog Pals</p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col01" class="collapse" aria-labelledby="headingOne2" data-parent="#a01">
+            <div class="card-body showInfo">
+              <p class="display-4">Puppy Dog Pals</p>
+              <p>16:00 - 16:30</p>
+              <p>Two fun-loving pug brothers with thrill-seeking appetites go on exhilarating adventures throughout
+                their neighborhood and around the globe.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="accordion" id="a02">
+
+          <div class="list">
+
+            <div class="time bl2">
+              7:30 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col02">
+              <p class="title">
+                <span class="blink" style="color:red;font-weight:bold;">●</span> T.O.T.S. <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col02" class="collapse" aria-labelledby="headingOne2" data-parent="#a02">
+            <div class="card-body showInfo">
+              <p class="display-4">  <span class="blink" style="color:red;font-weight:bold;">●</span> T.O.T.S. <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>18:00 - 19:00</p>
+              <p>CG animation featuring Mickey Mouse and his pals in stories designed to teach basic math skills, such as problem-solving, adding and matching.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="accordion" id="a03">
+
+          <div class="list">
+
+            <div class="time bl1">
+              8:00 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col03">
+              <p class="title">Mickey Mouse Clubhouse</p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col03" class="collapse" aria-labelledby="headingOne2" data-parent="#a03">
+            <div class="card-body showInfo">
+              <p class="display-4">Mickey Mouse Clubhouse</p>
+              <p>16:00 - 16:30</p>
+              <p>Two fun-loving pug brothers with thrill-seeking appetites go on exhilarating adventures throughout
+                their neighborhood and around the globe.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="accordion" id="a04">
+
+          <div class="list">
+
+            <div class="time bl3">
+              09:00 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col04">
+              <p class="title">
+                <span class="blink" style="color:red;font-weight:bold;">●</span> PJ Masks <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col04" class="collapse" aria-labelledby="headingOne2" data-parent="#a04">
+            <div class="card-body showInfo">
+              <p class="display-4">  <span class="blink" style="color:red;font-weight:bold;">●</span>PJ Masks <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>18:00 - 19:00</p>
+              <p>CG animation featuring Mickey Mouse and his pals in stories designed to teach basic math skills, such as problem-solving, adding and matching.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="accordion" id="a05">
+
+          <div class="list">
+
+            <div class="time bl3">
+              7:00 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col01">
+              <p class="title">Puppy Dog Pals</p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col05" class="collapse" aria-labelledby="headingOne2" data-parent="#a05">
+            <div class="card-body showInfo">
+              <p class="display-4">Puppy Dog Pals</p>
+              <p>16:00 - 16:30</p>
+              <p>Two fun-loving pug brothers with thrill-seeking appetites go on exhilarating adventures throughout
+                their neighborhood and around the globe.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="accordion" id="a06">
+
+          <div class="list">
+
+            <div class="time bl2">
+              7:00 <br> AM
+            </div>
+
+
+            <div class="showName" data-toggle="collapse" data-target="#col06">
+              <p class="title">
+                <span class="blink" style="color:red;font-weight:bold;">●</span> T.O.T.S. <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>30 min</p>
+            </div>
+
+          </div>
+
+          <div id="col06" class="collapse" aria-labelledby="headingOne2" data-parent="#a06">
+            <div class="card-body showInfo">
+              <p class="display-4">  <span class="blink" style="color:red;font-weight:bold;">●</span> T.O.T.S. <sup style="color:red;font-weight:bold;"> LIVE NOW</sup></span>
+              </p>
+              <p>18:00 - 19:00</p>
+              <p>CG animation featuring Mickey Mouse and his pals in stories designed to teach basic math skills, such as problem-solving, adding and matching.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</body>
+
+</html>
